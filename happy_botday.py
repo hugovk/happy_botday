@@ -3,18 +3,14 @@
 """
 Tweet birthday wishes for bots created today!
 """
-from __future__ import print_function, unicode_literals
-
-# from pprint import pprint
-from twitter import Twitter, OAuth  # pip install twitter
-
 import argparse
-import inflect  # pip install inflect
 import random
 import time
 import webbrowser
-import yaml  # pip install pyyaml
 
+import inflect  # pip install inflect
+import yaml  # pip install pyyaml
+from twitter import OAuth, Twitter  # pip install twitter
 
 TWITTER = None
 
