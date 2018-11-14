@@ -15,8 +15,12 @@ matrix:
 install:
  - pip install -U pip
  - pip install -U black flake8
+ - pip install -U -r requirements.txt
 
 script:
  # Static analysis
  - flake8 --statistics --count
  - black --check --diff .
+
+ # Test run
+ - python happy_botday.py --help
