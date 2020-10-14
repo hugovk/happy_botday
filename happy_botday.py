@@ -94,8 +94,8 @@ def get_list_members(list_owner, list_name):
 
 def created_at_timestamp(user):
     """Return Twitter format 'Thu May 15 02:33:11 +0000 2014'
-     as Python timestamp
-     """
+    as Python timestamp
+    """
     return time.strftime(
         "%Y-%m-%d %H:%M:%S",
         time.strptime(user["created_at"], "%a %b %d %H:%M:%S +0000 %Y"),
